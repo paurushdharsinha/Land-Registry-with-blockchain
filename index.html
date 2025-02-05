@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Registry DApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Blockchain Land Registry</h1>
+        <p>Secure, Transparent, and Efficient Land Transactions</p>
+    </header>
+    <main>
+        <section id="register">
+            <h2>Register Land</h2>
+            <form id="registerForm">
+                <label for="owner">Owner Name:</label>
+                <input type="text" id="owner" required>
+                <label for="landId">Land ID:</label>
+                <input type="text" id="landId" required>
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+                <button type="submit">Register Land</button>
+            </form>
+            <div id="registerMessage"></div>
+        </section>
+
+        <section id="transfer">
+            <h2>Transfer Land Ownership</h2>
+            <form id="transferForm">
+                <label for="fromOwner">Current Owner:</label>
+                <input type="text" id="fromOwner" required>
+                <label for="toOwner">New Owner:</label>
+                <input type="text" id="toOwner" required>
+                <label for="transferLandId">Land ID:</label>
+                <input type="text" id="transferLandId" required>
+                <button type="submit">Transfer Ownership</button>
+            </form>
+            <div id="transferMessage"></div>
+        </section>
+
+        <section id="verify">
+            <h2>Verify Land Ownership</h2>
+            <form id="verifyForm">
+                <label for="verifyLandId">Land ID:</label>
+                <input type="text" id="verifyLandId" required>
+                <button type="submit">Verify Ownership</button>
+            </form>
+            <div id="verifyMessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Blockchain Land Registry. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
